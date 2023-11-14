@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShootProjectile : MonoBehaviour
 {
-    private Vector3 offset;
     public Transform firePosition;
     private bool isFiring;
     private float launchVelocity = 5000f;
