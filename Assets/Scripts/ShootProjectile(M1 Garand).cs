@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShootProjectile : MonoBehaviour
 {
+    private Vector3 offset;
     public Transform firePosition;
     private bool isFiring;
     private float launchVelocity = 5000f;
@@ -11,12 +12,13 @@ public class ShootProjectile : MonoBehaviour
     private bool canFire;
     private float fireTime = 0f;
     private float fireRate = 1f;
+    protected Vector3 launchVector;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        launchVector = new Vector3(0, 0, launchVelocity);
     }
 
     // Update is called once per frame
