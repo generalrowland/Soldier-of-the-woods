@@ -8115,10 +8115,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 985918215}
     m_Modifications:
+    - target: {fileID: 178258371053483632, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1898588737493199813, guid: 972948e87ff09d44e855bd5c992b182f, type: 3}
     - target: {fileID: 192538646022516049, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6227952371065722581, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227952371065722581, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 77e6bb1b95839fe4ab447f141663ad52, type: 2}
+    - target: {fileID: 6227952371065722581, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 77e6bb1b95839fe4ab447f141663ad52, type: 2}
     - target: {fileID: 6650068981815223037, guid: 94072228e3b37f246baf923d55b9770d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.2
