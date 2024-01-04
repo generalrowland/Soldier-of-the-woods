@@ -223,11 +223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.337
+      value: 0.455
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.707
+      value: 0.437
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalRotation.w
@@ -239,11 +239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -264,6 +264,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
       propertyPath: m_Name
       value: pistol_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: d49a361a75dd9914a9da0d3c269a2565, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.091
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -507,6 +515,7 @@ GameObject:
   - component: {fileID: 68586527}
   - component: {fileID: 68586526}
   - component: {fileID: 68586525}
+  - component: {fileID: 68586529}
   m_Layer: 0
   m_Name: Enemy (13)
   m_TagString: Untagged
@@ -603,6 +612,28 @@ Transform:
   - {fileID: 154148531}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &68586529
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68586524}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &77244539
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +646,7 @@ GameObject:
   - component: {fileID: 77244542}
   - component: {fileID: 77244541}
   - component: {fileID: 77244540}
+  - component: {fileID: 77244544}
   m_Layer: 0
   m_Name: Enemy (18)
   m_TagString: Untagged
@@ -711,6 +743,28 @@ Transform:
   - {fileID: 1186484139}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &77244544
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77244539}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &120386004
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +777,7 @@ GameObject:
   - component: {fileID: 120386007}
   - component: {fileID: 120386006}
   - component: {fileID: 120386005}
+  - component: {fileID: 120386009}
   m_Layer: 0
   m_Name: Enemy (6)
   m_TagString: Untagged
@@ -819,6 +874,28 @@ Transform:
   - {fileID: 1852713098}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &120386009
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120386004}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &123358755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2129,6 +2206,7 @@ GameObject:
   - component: {fileID: 370994156}
   - component: {fileID: 370994155}
   - component: {fileID: 370994154}
+  - component: {fileID: 370994158}
   m_Layer: 0
   m_Name: Enemy (21)
   m_TagString: Untagged
@@ -2225,6 +2303,28 @@ Transform:
   - {fileID: 1807675654}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &370994158
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370994153}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &384550358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2447,6 +2547,7 @@ GameObject:
   - component: {fileID: 418809102}
   - component: {fileID: 418809101}
   - component: {fileID: 418809100}
+  - component: {fileID: 418809104}
   m_Layer: 0
   m_Name: Enemy (19)
   m_TagString: Untagged
@@ -2543,6 +2644,28 @@ Transform:
   - {fileID: 1008538803}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &418809104
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418809099}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &431412379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2920,6 +3043,7 @@ GameObject:
   - component: {fileID: 460962849}
   - component: {fileID: 460962848}
   - component: {fileID: 460962847}
+  - component: {fileID: 460962851}
   m_Layer: 0
   m_Name: Enemy (5)
   m_TagString: Untagged
@@ -3016,6 +3140,28 @@ Transform:
   - {fileID: 1413745851}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &460962851
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460962846}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &461519705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,6 +3174,7 @@ GameObject:
   - component: {fileID: 461519708}
   - component: {fileID: 461519707}
   - component: {fileID: 461519706}
+  - component: {fileID: 461519710}
   m_Layer: 0
   m_Name: Enemy (7)
   m_TagString: Untagged
@@ -3124,6 +3271,28 @@ Transform:
   - {fileID: 945958847}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &461519710
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461519705}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &465969908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3988,6 +4157,7 @@ GameObject:
   - component: {fileID: 818610266}
   - component: {fileID: 818610265}
   - component: {fileID: 818610264}
+  - component: {fileID: 818610268}
   m_Layer: 0
   m_Name: Enemy (4)
   m_TagString: Untagged
@@ -4084,6 +4254,28 @@ Transform:
   - {fileID: 1290197607}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &818610268
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818610263}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &847629984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4288,7 @@ GameObject:
   - component: {fileID: 847629987}
   - component: {fileID: 847629986}
   - component: {fileID: 847629985}
+  - component: {fileID: 847629989}
   m_Layer: 0
   m_Name: Enemy (22)
   m_TagString: Untagged
@@ -4192,6 +4385,28 @@ Transform:
   - {fileID: 1682162585}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &847629989
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847629984}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &869056415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +4419,7 @@ GameObject:
   - component: {fileID: 869056418}
   - component: {fileID: 869056417}
   - component: {fileID: 869056416}
+  - component: {fileID: 869056420}
   m_Layer: 0
   m_Name: Enemy (14)
   m_TagString: Untagged
@@ -4300,6 +4516,28 @@ Transform:
   - {fileID: 520612666}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &869056420
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869056415}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &880498026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4662,6 +4900,7 @@ GameObject:
   - component: {fileID: 948452178}
   - component: {fileID: 948452177}
   - component: {fileID: 948452176}
+  - component: {fileID: 948452180}
   m_Layer: 0
   m_Name: Enemy (11)
   m_TagString: Untagged
@@ -4758,6 +4997,28 @@ Transform:
   - {fileID: 1164213463}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &948452180
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948452175}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &983150052
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +5031,7 @@ GameObject:
   - component: {fileID: 983150055}
   - component: {fileID: 983150054}
   - component: {fileID: 983150053}
+  - component: {fileID: 983150057}
   m_Layer: 0
   m_Name: Enemy (3)
   m_TagString: Untagged
@@ -4866,6 +5128,28 @@ Transform:
   - {fileID: 1213784511}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &983150057
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983150052}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &985918214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,6 +6492,7 @@ GameObject:
   - component: {fileID: 1312166111}
   - component: {fileID: 1312166110}
   - component: {fileID: 1312166109}
+  - component: {fileID: 1312166113}
   m_Layer: 0
   m_Name: Enemy (16)
   m_TagString: Untagged
@@ -6304,6 +6589,28 @@ Transform:
   - {fileID: 1336547128}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1312166113
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312166108}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1336547127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7025,6 +7332,7 @@ GameObject:
   - component: {fileID: 1515936053}
   - component: {fileID: 1515936052}
   - component: {fileID: 1515936051}
+  - component: {fileID: 1515936055}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -7121,6 +7429,28 @@ Transform:
   - {fileID: 2025510437}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1515936055
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515936050}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1588091947
 GameObject:
   m_ObjectHideFlags: 0
@@ -7133,6 +7463,7 @@ GameObject:
   - component: {fileID: 1588091950}
   - component: {fileID: 1588091949}
   - component: {fileID: 1588091948}
+  - component: {fileID: 1588091952}
   m_Layer: 0
   m_Name: Enemy (9)
   m_TagString: Untagged
@@ -7229,6 +7560,28 @@ Transform:
   - {fileID: 1057042715}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1588091952
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588091947}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1603268872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7463,6 +7816,7 @@ GameObject:
   - component: {fileID: 1655252483}
   - component: {fileID: 1655252482}
   - component: {fileID: 1655252481}
+  - component: {fileID: 1655252485}
   m_Layer: 0
   m_Name: Enemy (8)
   m_TagString: Untagged
@@ -7559,6 +7913,28 @@ Transform:
   - {fileID: 285995364}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1655252485
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655252480}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1657014988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7571,6 +7947,7 @@ GameObject:
   - component: {fileID: 1657014991}
   - component: {fileID: 1657014990}
   - component: {fileID: 1657014989}
+  - component: {fileID: 1657014993}
   m_Layer: 0
   m_Name: Enemy (15)
   m_TagString: Untagged
@@ -7667,6 +8044,28 @@ Transform:
   - {fileID: 465969909}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1657014993
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657014988}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1664358045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8580,6 +8979,7 @@ GameObject:
   - component: {fileID: 1861110665}
   - component: {fileID: 1861110664}
   - component: {fileID: 1861110663}
+  - component: {fileID: 1861110667}
   m_Layer: 0
   m_Name: Enemy (10)
   m_TagString: Untagged
@@ -8676,6 +9076,28 @@ Transform:
   - {fileID: 41014107}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1861110667
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861110662}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1880857670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9058,6 +9480,7 @@ GameObject:
   - component: {fileID: 1965574309}
   - component: {fileID: 1965574308}
   - component: {fileID: 1965574307}
+  - component: {fileID: 1965574311}
   m_Layer: 0
   m_Name: Enemy (17)
   m_TagString: Untagged
@@ -9154,6 +9577,28 @@ Transform:
   - {fileID: 1511176354}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1965574311
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965574306}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1982902862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9466,6 +9911,7 @@ GameObject:
   - component: {fileID: 2061032629}
   - component: {fileID: 2061032628}
   - component: {fileID: 2061032627}
+  - component: {fileID: 2061032631}
   m_Layer: 0
   m_Name: Enemy (12)
   m_TagString: Untagged
@@ -9562,6 +10008,28 @@ Transform:
   - {fileID: 123358756}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &2061032631
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061032626}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2117641144
 GameObject:
   m_ObjectHideFlags: 0
@@ -9574,6 +10042,7 @@ GameObject:
   - component: {fileID: 2117641147}
   - component: {fileID: 2117641146}
   - component: {fileID: 2117641145}
+  - component: {fileID: 2117641149}
   m_Layer: 0
   m_Name: Enemy (20)
   m_TagString: Untagged
@@ -9670,6 +10139,28 @@ Transform:
   - {fileID: 178512350}
   m_Father: {fileID: 985918215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &2117641149
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117641144}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.018013898
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.004926038
+  m_BaseOffset: 0.002463019
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &777637790604319698
 PrefabInstance:
   m_ObjectHideFlags: 0
