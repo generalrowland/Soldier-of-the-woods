@@ -20,4 +20,9 @@ public class Spawner : MonoBehaviour
     {
         
     }
+
+    void Spawn()
+    {
+
+    }
 }
