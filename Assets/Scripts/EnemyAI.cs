@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.Find("Player");
         ai = GetComponent<NavMeshAgent>();
     }
 
