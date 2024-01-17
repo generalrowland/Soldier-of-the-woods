@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     public GameObject target;
     private NavMeshAgent ai;
-
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,16 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ai.SetDestination(target.transform.position);
+        //ai.SetDestination(target.transform.position);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ai.SetDestination(target.transform.position);
+            anim.SetBool("IsMoving", true);
+        }
+        else anim.SetBool("IsMoving", false);
     }
 }
