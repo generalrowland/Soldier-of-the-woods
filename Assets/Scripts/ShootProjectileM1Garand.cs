@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootProjectile : MonoBehaviour
+public class ShootProjectileM1Garand : MonoBehaviour
 {
     public Transform firePosition;
     private bool isFiring;

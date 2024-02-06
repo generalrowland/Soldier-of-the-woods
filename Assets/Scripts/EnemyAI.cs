@@ -22,6 +22,14 @@ public class EnemyAI : MonoBehaviour
         //ai.SetDestination(target.transform.position);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            anim.SetTrigger("IsHit");
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
