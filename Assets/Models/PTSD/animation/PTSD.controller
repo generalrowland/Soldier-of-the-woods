@@ -135,6 +135,31 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!1101 &-1266222470329862682
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsDead
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2184324770371403716}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-775602190205644898
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -410,13 +435,14 @@ AnimatorStateMachine:
     m_Position: {x: 65.28528, y: 365.17712, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2184324770371403716}
-    m_Position: {x: 162.77667, y: 507.60565, z: 0}
+    m_Position: {x: 40, y: 510, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8799015137678364437}
     m_Position: {x: 331.53198, y: 617.51886, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1669797773043947311}
+  - {fileID: -1266222470329862682}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
