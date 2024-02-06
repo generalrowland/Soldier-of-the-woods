@@ -12,12 +12,15 @@ public class ShootProjectile : MonoBehaviour
     private float fireTime = 0f;
     private float fireRate = 1f;
     protected Vector3 launchVector;
+    private Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
         launchVector = new Vector3(0, 0, launchVelocity);
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,6 +43,8 @@ public class ShootProjectile : MonoBehaviour
             GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
             clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
             fireTime = fireRate;
+
+            animator.SetTrigger("IsAttacking");
         }
     }
 
