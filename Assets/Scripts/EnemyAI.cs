@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject target;
     private NavMeshAgent ai;
     public Animator anim;
+    public float enemyHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,9 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectile"))
         {
+            enemyHealth -= 5;
             anim.SetTrigger("IsHit");
+
         }
     }
 
