@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent ai;
     public Animator anim;
     public float enemyHealth;
+    private bool isMoving;
 
     // Start is called before the first frame update
     void Start()
@@ -39,11 +40,11 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")&& target != null)
         {
             ai.SetDestination(target.transform.position);
-            anim.SetBool("IsMoving", true);
+            if(isMoving==false) 
+                anim.SetBool("IsMoving", true);
         }
-        else anim.SetBool("IsMoving", false);
     }
 }
