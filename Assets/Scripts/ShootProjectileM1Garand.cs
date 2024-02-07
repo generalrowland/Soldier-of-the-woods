@@ -6,9 +6,9 @@ public class ShootProjectileM1Garand : MonoBehaviour
 {
     public Transform firePosition;
     private bool isFiring;
-    private float launchVelocity = 5000f;
+    public float launchVelocity = 0f;
     public GameObject Projectile;
-    private bool canFire;
+    public bool canFire;
     private float fireTime = 0f;
     private float fireRate = 1f;
     protected Vector3 launchVector;

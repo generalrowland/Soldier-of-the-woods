@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 4571028951611831936}
-  enemyHealth: 0
+  enemyHealth: 123
 --- !u!135 &3258068106515500320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
