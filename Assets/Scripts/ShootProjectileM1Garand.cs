@@ -6,7 +6,7 @@ public class ShootProjectileM1Garand : MonoBehaviour
 {
     public Transform firePosition;
     private bool isFiring;
-    public float launchVelocity = 0f;
+    public float launchVelocity = 50f;
     public GameObject Projectile;
     public bool canFire;
     private float fireTime = 0f;
@@ -40,12 +40,17 @@ public class ShootProjectileM1Garand : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) & canFire)
         {
-            GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
-            clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
-            fireTime = fireRate;
+            Invoke("Fire", 0.35f);
 
             animator.SetTrigger("IsAttacking");
         }
     }
 
+    void Fire()
+    {
+        GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
+        clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
+        fireTime = fireRate;
+
+    }
 }
