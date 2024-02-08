@@ -29,11 +29,15 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             enemyHealth -= 5;
+            Debug.Log("Hit Enemy");
 
             if (enemyHealth > 0)
                 anim.SetTrigger("IsHit");
             else
+            {
                 anim.SetTrigger("IsDead");
+                Destroy(gameObject, 30);
+            }
 
         }
     }
