@@ -7,7 +7,7 @@ public class ShootProjectilePistol : MonoBehaviour
     public Transform firePosition;
     private bool isFiring;
     public float launchVelocity = 50f;
-    public GameObject Projectile;
+    public GameObject Projectile2;
     public bool canFire;
     private float fireTime = 0f;
     private float fireRate = 1f;
@@ -48,7 +48,7 @@ public class ShootProjectilePistol : MonoBehaviour
 
     void Fire()
     {
-        GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
+        GameObject clone = Instantiate(Projectile2, firePosition.position, firePosition.rotation);
         clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
         fireTime = fireRate;
 
