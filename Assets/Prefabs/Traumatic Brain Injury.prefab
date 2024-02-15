@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 7123955549126924826}
   m_Layer: 0
   m_Name: Traumatic Brain Injury
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,6 +950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 8431932370237739670}
+  enemyHealth: 167
 --- !u!195 &1705458098485760475
 NavMeshAgent:
   m_ObjectHideFlags: 0

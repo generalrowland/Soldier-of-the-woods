@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 1041932026813635771}
   m_Layer: 0
   m_Name: Sexual Assault
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,6 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 365484633913162345}
+  enemyHealth: 63
 --- !u!195 &7199383444540243826
 NavMeshAgent:
   m_ObjectHideFlags: 0

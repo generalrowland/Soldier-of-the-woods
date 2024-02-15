@@ -212,6 +212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grief
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60ae2039fcaae8d4380efd6864c0f60d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2559285840627121667, guid: 60ae2039fcaae8d4380efd6864c0f60d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -37.943233
@@ -372,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 8074712537951725077}
+  enemyHealth: 78
 --- !u!195 &3978768704186422611
 NavMeshAgent:
   m_ObjectHideFlags: 0

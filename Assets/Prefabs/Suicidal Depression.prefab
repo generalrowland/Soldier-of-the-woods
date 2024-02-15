@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 127971403457808657}
   m_Layer: 0
   m_Name: Suicidal Depression
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1708,6 +1708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 3252132948522496396}
+  enemyHealth: 101
 --- !u!195 &6883817606245410300
 NavMeshAgent:
   m_ObjectHideFlags: 0

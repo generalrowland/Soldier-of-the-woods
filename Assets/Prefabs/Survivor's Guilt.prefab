@@ -1822,7 +1822,7 @@ GameObject:
   - component: {fileID: 4115525077261645620}
   m_Layer: 0
   m_Name: Survivor's Guilt
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1882,6 +1882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 7736397316031631567}
+  enemyHealth: 98
 --- !u!195 &3186661416128087705
 NavMeshAgent:
   m_ObjectHideFlags: 0
