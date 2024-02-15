@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anxiety
       objectReference: {fileID: 0}
+    - target: {fileID: 100072, guid: 61b8698a2176146289745095c88a5155, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 61b8698a2176146289745095c88a5155, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.45905724
@@ -1329,6 +1333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   anim: {fileID: 3115475675649085297}
+  enemyHealth: 50
 --- !u!195 &8300897566374507801
 NavMeshAgent:
   m_ObjectHideFlags: 0
