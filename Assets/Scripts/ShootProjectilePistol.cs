@@ -6,7 +6,7 @@ public class ShootProjectilePistol : MonoBehaviour
 {
     public Transform firePosition;
     private bool isFiring;
-    public float launchVelocity = 50f;
+    public float launchVelocity = 5000f;
     public GameObject Projectile;
     public bool canFire;
     private float fireTime = 0f;
