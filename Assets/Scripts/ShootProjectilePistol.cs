@@ -10,7 +10,7 @@ public class ShootProjectilePistol : MonoBehaviour
     public GameObject Projectile;
     public bool canFire;
     private float fireTime = 0f;
-    private float fireRate = 1f;
+    private float fireRate = 0.3f;
     protected Vector3 launchVector;
     private Animator animator;
 
