@@ -40,6 +40,10 @@ public class EnemyAI : MonoBehaviour
             }
 
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            anim.SetTrigger("IsAttacking");
+        }
     }
 
     private void OnTriggerStay(Collider other)
