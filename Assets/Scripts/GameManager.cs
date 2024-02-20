@@ -18,4 +18,9 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
+
+    public void Restart() 
+    {
+    
+    }
 }
