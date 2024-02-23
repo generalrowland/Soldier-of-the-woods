@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance;
     public static AudioManager Instance {  get { return instance; } }
 
+    public AudioMixer masterMixer;
+
     public void Awake()
     {
        if(instance != null && instance != this)
@@ -24,12 +26,19 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        masterMixer.SetFloat("MasterVol", PreferencesManager.GetMasterVolume());
+        masterMixer.SetFloat("MusicVol", PreferencesManager.GetMusicVolume());
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeSoundVolume(float soundLevel)
     {
-        
+        masterMixer.SetFloat("MasterVol", soundLevel);
+        PreferencesManager.SetMasterVolume(soundLevel);
+    }
+
+    public void ChangeMusicVolume(float soundLevel)
+    {
+        masterMixer.SetFloat("MusicVol", soundLevel);
+        PreferencesManager.SetMusicVolume(soundLevel);
     }
 }
