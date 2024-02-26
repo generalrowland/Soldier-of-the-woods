@@ -9,6 +9,7 @@ public class LookAtMouse : MonoBehaviour
     public Vector3 deltaMove;
     public float speed = 1;
     public GameObject player;
+    public PauseMenu pauseMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +20,14 @@ public class LookAtMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        turn.y += Input.GetAxis("Mouse Y") * sensitivity;
-        player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
-        transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
+        if(pauseMenu.isPaused == false)
+        {
+            turn.x += Input.GetAxis("Mouse X") * sensitivity;
+            turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+            player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
+            transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
+        }
+        
     }
 }
 
