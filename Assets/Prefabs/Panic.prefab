@@ -88,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100174, guid: 5779b1a41ccf45b45bfc238034373133, type: 3}
       insertIndex: -1
       addedObject: {fileID: 524255052318102974}
+    - targetCorrespondingSourceObject: {fileID: 100174, guid: 5779b1a41ccf45b45bfc238034373133, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4974479962818181591}
   m_SourcePrefab: {fileID: 100100000, guid: 5779b1a41ccf45b45bfc238034373133, type: 3}
 --- !u!95 &1025854042491141587 stripped
 Animator:
@@ -180,3 +183,17 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 4.64
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4974479962818181591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025854042498420733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cc0230886715548a628e2588a5c064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 196
+  attack: 31

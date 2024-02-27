@@ -1643,6 +1643,7 @@ GameObject:
   - component: {fileID: 6883817606245410300}
   - component: {fileID: 6581441379775150110}
   - component: {fileID: 127971403457808657}
+  - component: {fileID: 2702990968119960644}
   m_Layer: 0
   m_Name: Suicidal Depression
   m_TagString: Enemy
@@ -1775,6 +1776,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 12
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2702990968119960644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705792715760886843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cc0230886715548a628e2588a5c064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 101
+  attack: 5
 --- !u!1 &4967973191422015085
 GameObject:
   m_ObjectHideFlags: 0

@@ -2571,6 +2571,7 @@ GameObject:
   - component: {fileID: 6315959580674528635}
   - component: {fileID: 336339905208989401}
   - component: {fileID: 5149873211523138662}
+  - component: {fileID: 7624269095670233368}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -2676,6 +2677,7 @@ MonoBehaviour:
   deltaMove: {x: 0, y: 0, z: 0}
   speed: 1
   player: {fileID: 9083105180335485375}
+  pauseMenu: {fileID: 0}
 --- !u!95 &6315959580674528635
 Animator:
   serializedVersion: 5
@@ -2725,9 +2727,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePosition: {fileID: 1496351784636984347}
-  launchVelocity: 50
+  launchVelocity: 5000
   Projectile: {fileID: 6037503161995017261, guid: fc6957483057c384b81bdad99a625311, type: 3}
   canFire: 0
+--- !u!114 &7624269095670233368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083105180335485375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cc0230886715548a628e2588a5c064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  attack: 10
 --- !u!1 &9120969134156294848
 GameObject:
   m_ObjectHideFlags: 0
