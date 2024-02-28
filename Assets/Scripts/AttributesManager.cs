@@ -6,17 +6,19 @@ public class AttributesManager : MonoBehaviour
 {
     public int health;
     public int attack;
+    public int armor;
 
 
 
     public void TakeDamage(int amount)
     {
-        health -= amount;
+        health -= amount - (amount * armor/100);
     }
 
     public void DealDamage(GameObject target)
     {
         var atm = target.GetComponent<AttributesManager>();
+        if(atm != null )
         {
             atm.TakeDamage(attack);
         }
