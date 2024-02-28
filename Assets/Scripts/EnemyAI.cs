@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour
     public Animator anim;
     public float enemyHealth;
     private bool isMoving;
+    public int damage;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetTrigger("IsAttacking");
+            collision.gameObject.GetComponent<Player>().TakeDamage(damage);
         }
     }
 

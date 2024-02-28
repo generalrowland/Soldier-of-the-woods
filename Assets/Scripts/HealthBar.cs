@@ -9,6 +9,8 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+    public float healthAmount = 100;
+    public Image healthBar;
 
     public void SetMaxHealth(int health)
     {
@@ -23,5 +25,19 @@ public class HealthBar : MonoBehaviour
         slider.value = health;
 
         fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
+    public void TakeDamage(float Damage)
+    {
+        healthAmount -= Damage;
+        healthBar.fillAmount = healthAmount / 100;
+    }
+
+    public void Healing(float medKit)
+    {
+        healthAmount += medKit;
+        healthAmount = Mathf.Clamp(healthAmount, 0, 100);
+
+        healthBar.fillAmount = healthAmount / 100;
     }
 }

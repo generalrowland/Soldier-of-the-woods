@@ -97,6 +97,7 @@ MonoBehaviour:
   target: {fileID: 0}
   anim: {fileID: 4571028951611831936}
   enemyHealth: 123
+  damage: 3
 --- !u!135 &3258068106515500320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -132,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 123
   attack: 3
+  armor: 0
 --- !u!1001 &7674991874437879565
 PrefabInstance:
   m_ObjectHideFlags: 0
