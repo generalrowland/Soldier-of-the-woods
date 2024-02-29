@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DeathManager : MonoBehaviour
 {
@@ -15,8 +16,13 @@ public class DeathManager : MonoBehaviour
         quoteLabel.text = deathQuotes[Random.Range(0, deathQuotes.Length)];
     }
 
-    public void Setup(int score)
+    public void RestartButton()
     {
-        gameObject.SetActive(true);
+        SceneManager.LoadScene("Fight...");
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene("GiveUp...");
     }
 }

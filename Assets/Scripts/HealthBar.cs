@@ -50,6 +50,7 @@ public class HealthBar : MonoBehaviour
         {
             deathMenu.SetActive(true);
             Destroy(player);
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 }
