@@ -11,6 +11,8 @@ public class HealthBar : MonoBehaviour
     public Image fill;
     public float healthAmount = 100;
     public Image healthBar;
+    public GameObject deathMenu;
+    public GameObject player;
 
     public void SetMaxHealth(int health)
     {
@@ -39,5 +41,15 @@ public class HealthBar : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
         healthBar.fillAmount = healthAmount / 100;
+    }
+
+    private void Update()
+    {
+        healthAmount = slider.value;
+        if(healthAmount <= 0)
+        {
+            deathMenu.SetActive(true);
+            Destroy(player);
+        }
     }
 }
