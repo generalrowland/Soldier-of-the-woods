@@ -18,11 +18,11 @@ public class DeathManager : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Fight...");
+        SceneManager.LoadScene(1);
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("GiveUp...");
+        Application.Quit();
     }
 }
