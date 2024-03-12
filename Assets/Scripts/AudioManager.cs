@@ -28,6 +28,7 @@ public class AudioManager : MonoBehaviour
     {
         masterMixer.SetFloat("MasterVol", PreferencesManager.GetMasterVolume());
         masterMixer.SetFloat("MusicVol", PreferencesManager.GetMusicVolume());
+        masterMixer.SetFloat("FootstepsVol", PreferencesManager.GetFootstepsVolume());
     }
 
     public void ChangeSoundVolume(float soundLevel)
@@ -40,5 +41,11 @@ public class AudioManager : MonoBehaviour
     {
         masterMixer.SetFloat("MusicVol", soundLevel);
         PreferencesManager.SetMusicVolume(soundLevel);
+    }
+
+    public void ChangeFootstepsVolume(float soundLevel)
+    {
+        masterMixer.SetFloat("FootstepsVol", soundLevel);
+        PreferencesManager.SetFootstepsVolume(soundLevel);
     }
 }

@@ -7,12 +7,14 @@ public class MenuManager : MonoBehaviour
 {
     public Slider musicSlider;
     public Slider masterSlider;
+    public Slider footstepsSlider;
 
     // Start is called before the first frame update
     void Start()
     {
         PreferencesManager.GetMasterVolume();
         PreferencesManager.GetMusicVolume();
+        PreferencesManager.GetFootstepsVolume();
     }
 
     public void ChangeSoundVolume(float soundLevel)
@@ -23,6 +25,11 @@ public class MenuManager : MonoBehaviour
     public void ChangeMusicVolume(float soundLevel)
     {
         AudioManager.Instance.ChangeMusicVolume(soundLevel);
+    }
+
+    public void ChangeFootstepsVolume(float soundLevel)
+    {
+        AudioManager.Instance.ChangeFootstepsVolume(soundLevel);
     }
 
     // Update is called once per frame
