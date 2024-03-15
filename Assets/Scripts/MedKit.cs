@@ -5,14 +5,14 @@ using UnityEngine;
 public class MedKit : MonoBehaviour
 {
 
-    public float healAmount;
+    public int healAmount;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<HealthBar>().Healing(healAmount);
+            other.GetComponent<Player>().Healing(healAmount);
             Destroy(gameObject);
         }
     }
