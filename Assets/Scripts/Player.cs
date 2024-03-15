@@ -29,4 +29,12 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         Debug.Log("Player took damage");
     }
+
+    public void Healing(int amount)
+    {
+        currentHealth += amount;
+
+        healthBar.SetHealth(currentHealth);
+        Debug.Log("Player is healing");
+    }
 }
