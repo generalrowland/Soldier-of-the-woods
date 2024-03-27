@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -52,5 +53,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
+    }
+
+    public void MoveInput(Vector2 newMoveDir)
+    {
+        horizontal = value.Get<Vector2>().x;
+        vertical = value.Get<Vector2>().y();
     }
 }
