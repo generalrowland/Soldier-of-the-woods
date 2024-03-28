@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveInput(Vector2 newMoveDir)
     {
+        newMoveDir = newMoveDir.normalized;
         horizontal = newMoveDir.x;
         vertical = newMoveDir.y;
     }

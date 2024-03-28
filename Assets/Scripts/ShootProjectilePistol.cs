@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
+using UnityEngine.InputSystem;
 
 public class ShootProjectilePistol : MonoBehaviour
 {
@@ -40,7 +42,7 @@ public class ShootProjectilePistol : MonoBehaviour
             canFire = false;
         }
 
-        if (Input.GetMouseButtonDown(0) & canFire)
+        if (isFiring & canFire)
         {
             Invoke("Fire", 0.35f);
 
@@ -53,6 +55,16 @@ public class ShootProjectilePistol : MonoBehaviour
         GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
         clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
         fireTime = fireRate;
-
     }
+
+    public void FireInput(bool newFireState)
+    {
+        isFiring = newFireState;
+    }
+
+    public void OnFire(InputValue value)
+    {
+        FireInput(value.isPressed);
+    }
+
 }

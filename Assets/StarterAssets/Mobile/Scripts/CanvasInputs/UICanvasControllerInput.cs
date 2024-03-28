@@ -8,6 +8,7 @@ namespace StarterAssets
         [Header("Output")]
         public PlayerMovement starterAssetsInputs;
         public LookAtMouse look;
+        public ShootProjectilePistol shoot;
 
         public void VirtualMoveInput(Vector2 virtualMoveDirection)
         {
@@ -18,7 +19,11 @@ namespace StarterAssets
         {
             look.LookInput(virtualLookDirection);
         }
-        
+
+        public void VirtualFireInput(bool virtualFireDirection)
+        {
+            shoot.FireInput(virtualFireDirection);
+        }
     }
 
 }
