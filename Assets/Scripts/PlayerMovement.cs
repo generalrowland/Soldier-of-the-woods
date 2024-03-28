@@ -25,9 +25,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        vertical = Input.GetAxisRaw("Vertical");
 
         if (horizontal != 0 || vertical != 0)
 
@@ -66,15 +63,5 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputValue value)
     {
         MoveInput(value.Get<Vector2>());
-    }
-
-    public void LookInput(Vector2 newMoveDir)
-    {
-
-    }
-
-    public void OnLook(InputValue value)
-    {
-
     }
 }

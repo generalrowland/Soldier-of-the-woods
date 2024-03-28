@@ -7,6 +7,7 @@ namespace StarterAssets
 
         [Header("Output")]
         public PlayerMovement starterAssetsInputs;
+        public LookAtMouse look;
 
         public void VirtualMoveInput(Vector2 virtualMoveDirection)
         {
@@ -15,7 +16,7 @@ namespace StarterAssets
 
         public void VirtualLookInput(Vector2 virtualLookDirection)
         {
-            starterAssetsInputs.LookInput(virtualLookDirection);
+            look.LookInput(virtualLookDirection);
         }
         
     }

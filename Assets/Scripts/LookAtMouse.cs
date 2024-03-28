@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class LookAtMouse : MonoBehaviour
 {
@@ -24,12 +25,27 @@ public class LookAtMouse : MonoBehaviour
     {
         if(pauseMenu.isPaused == false)
         {
-            turn.x += Input.GetAxis("Mouse X") * sensitivity;
-            turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+            turn.x += horizontal * sensitivity;
+            turn.y += vertical * sensitivity;
+            turn.y = Mathf.Clamp(turn.y, -50, 50);
             player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
             transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
         }
         
     }
+
+    public void LookInput(Vector2 newMoveDir)
+    {
+        horizontal = newMoveDir.x;
+        vertical = newMoveDir.y;
+    }
+
+    public void OnLook(InputValue value)
+    {
+        LookInput(value.Get<Vector2>());
+    }
+
 }
+
+
 
