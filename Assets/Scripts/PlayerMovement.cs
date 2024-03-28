@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -57,7 +59,22 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveInput(Vector2 newMoveDir)
     {
-        horizontal = value.Get<Vector2>().x;
-        vertical = value.Get<Vector2>().y();
+        horizontal = newMoveDir.x;
+        vertical = newMoveDir.y;
+    }
+
+    public void OnMove(InputValue value)
+    {
+        MoveInput(value.Get<Vector2>());
+    }
+
+    public void LookInput(Vector2 newMoveDir)
+    {
+
+    }
+
+    public void OnLook(InputValue value)
+    {
+
     }
 }

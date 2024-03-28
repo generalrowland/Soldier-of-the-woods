@@ -10,6 +10,8 @@ public class LookAtMouse : MonoBehaviour
     public float speed = 1;
     public GameObject player;
     public PauseMenu pauseMenu;
+    public float horizontal;
+    public float vertical;
 
     // Start is called before the first frame update
     void Start()
