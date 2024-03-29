@@ -38,6 +38,7 @@ public class EnemyAI : MonoBehaviour
             {
                 anim.SetTrigger("IsDead");
                 Destroy(gameObject, 30);
+                ScoreManager.Instance.AddPoints(13);
             }
 
         }
