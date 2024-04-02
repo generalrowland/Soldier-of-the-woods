@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 7542868631615572118}
   - component: {fileID: 5156602397799881846}
   m_Layer: 0
-  m_Name: Rig 1 (1)
+  m_Name: Right Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 7636849808377123231}
   - component: {fileID: 6494934606464997591}
   m_Layer: 0
-  m_Name: Rig 1
+  m_Name: Left Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 867010914073372479}
   - component: {fileID: 3401064596721301466}
   m_Layer: 0
-  m_Name: Rig 1 (2)
+  m_Name: Left Wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 4572054419789426125}
   - component: {fileID: 2857515432094355300}
   m_Layer: 0
-  m_Name: Rig 1 (3)
+  m_Name: Right Wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
