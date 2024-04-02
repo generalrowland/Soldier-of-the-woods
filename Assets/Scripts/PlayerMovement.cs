@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
 
     public float speed = 1;
-    private float xRange = 98;
-    private float zRange = 93;
+    private float xRange = 308;
+    private float zRange = 285;
     private float horizontal;
     private float vertical;
     private Animator animator;
