@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class ShootProjectilePistol : MonoBehaviour
 {
     public Transform firePosition;
@@ -47,6 +48,12 @@ public class ShootProjectilePistol : MonoBehaviour
 
             animator.SetTrigger("IsAttacking");
         }
+    }
+
+    public virtual void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(firePosition.position, firePosition.forward * launchVelocity);
     }
 
     void Fire()
