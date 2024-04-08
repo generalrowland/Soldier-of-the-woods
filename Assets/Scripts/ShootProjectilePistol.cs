@@ -46,7 +46,7 @@ public class ShootProjectilePistol : MonoBehaviour
         if (isFiring & canFire)
         {
             Invoke("Fire", 0.35f);
-
+            isFiring = false;
             animator.SetTrigger("IsAttacking");
         }
     }
@@ -67,7 +67,7 @@ public class ShootProjectilePistol : MonoBehaviour
 
     public void FireInput(bool newFireState)
     {
-        isFiring = newFireState;
+        isFiring = true;
     }
 
     public void OnFire(InputValue value)
