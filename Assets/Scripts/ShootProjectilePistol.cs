@@ -15,6 +15,7 @@ public class ShootProjectilePistol : MonoBehaviour
     private float fireRate = 0.2f;
     protected Vector3 launchVector;
     private Animator animator;
+    public AudioSource gunSource;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,7 @@ public class ShootProjectilePistol : MonoBehaviour
 
     void Fire()
     {
+        gunSource.Play();
         GameObject clone = Instantiate(Projectile, firePosition.position, firePosition.rotation);
         clone.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, launchVelocity));
         fireTime = fireRate;
