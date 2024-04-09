@@ -391,7 +391,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.946, y: 110.063, z: 33.998}
+        value: {x: 200.699, y: 3.572998, z: 483.6}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -401,8 +401,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.15
         value: {x: -19.599, y: 119.25, z: 46.824}
-        inSlope: {x: -4.477574, y: 3.925453, z: 0}
-        outSlope: {x: -4.477574, y: 3.925453, z: 0}
+        inSlope: {x: -4.4775777, y: 4.5660577, z: -7.166044}
+        outSlope: {x: -4.4775777, y: 4.5660577, z: -7.166044}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -6379,7 +6379,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.946
+        value: 200.699
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -6389,8 +6389,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.15
         value: -19.599
-        inSlope: -4.477574
-        outSlope: -4.477574
+        inSlope: -4.4775777
+        outSlope: -4.4775777
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -6499,7 +6499,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 110.063
+        value: 3.572998
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -6509,8 +6509,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.15
         value: 119.25
-        inSlope: 3.925453
-        outSlope: 3.925453
+        inSlope: 4.5660577
+        outSlope: 4.5660577
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -6619,7 +6619,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 33.998
+        value: 483.6
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -6629,8 +6629,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.15
         value: 46.824
-        inSlope: 0
-        outSlope: 0
+        inSlope: -7.166044
+        outSlope: -7.166044
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -20116,7 +20116,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -20128,7 +20128,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -20140,7 +20140,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -21520,7 +21520,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -21532,7 +21532,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -21544,7 +21544,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.035/Bone.036/Bone.037/Bone.038/pistol_low"
+    path: "\u0421\u043A\u0435\u043B\u0435\u0442/Bone/Bone.002/Bone.003/Bone.006/Bone.013/Bone.014/Bone.015"
     classID: 4
     script: {fileID: 0}
     flags: 0
