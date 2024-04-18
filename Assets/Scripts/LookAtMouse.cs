@@ -30,7 +30,7 @@ public class LookAtMouse : MonoBehaviour
             turn.y += vertical * sensitivity;
             turn.y = Mathf.Clamp(turn.y, -50, 50);
             player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
-            playerCamera.transform.localRotation = Quaternion.Euler(turn.y, 0, 0);
+            playerCamera.transform.localRotation = Quaternion.Euler(-turn.y, 0, 0);
         }
         
     }

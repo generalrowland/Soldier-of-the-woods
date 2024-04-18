@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
-    int wave;
+    
+    public int wave;
     public GameObject[] spawnPoints;
     public GameObject pTSD, survivorsGuilt, suicidalDepression, sexualAssault, traumaticBrainInjury, grief, panic, anxiety;
 
@@ -53,7 +57,8 @@ public class Spawner : MonoBehaviour
                 case 9: 
                     Spawn(12, anxiety);
                     break;
-                case 10: 
+                case 10:
+                    Endgame();
                     break;
                     default: break;
             }
@@ -62,10 +67,18 @@ public class Spawner : MonoBehaviour
 
     void Spawn(int monstersToSpawn, GameObject enemy)
     {
-        for(int i = 0; i< monstersToSpawn; i++)
+        for (int i = 0; i < monstersToSpawn; i++)
         {
             int j = Random.Range(0, spawnPoints.Length);
             GameObject enemyClone = Instantiate(enemy, spawnPoints[j].transform.position, spawnPoints[j].transform.rotation);
+        }
+    }
+    void Endgame()
+    {
+        if (wave == 10)
+            {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(2);
         }
     }
 }
