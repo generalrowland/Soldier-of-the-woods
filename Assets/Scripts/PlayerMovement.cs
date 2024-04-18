@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
 
-    public float speed = 5;
+    public float speed = 12;
     private float xRange = 308;
     private float zRange = 285;
     private float horizontal;
