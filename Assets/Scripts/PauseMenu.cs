@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -19,8 +20,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
+      
             if(isPaused)
             {
                 ResumeGame();
@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
             {
                 PauseGame();
             }
-        }
+        
     }
 
     public void PauseGame()
@@ -58,5 +58,10 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OnPause(InputValue Value)
+    {
+        isPaused = !isPaused;
     }
 }
