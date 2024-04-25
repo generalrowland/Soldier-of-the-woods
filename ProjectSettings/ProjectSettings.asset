@@ -775,14 +775,30 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Soldierofthewoods
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 80c8c95d47b6db01
   metroApplicationDescription: Soldier of the woods
-  wsaImages: {}
-  metroTileShortName: Soldier of the woods
+  wsaImages:
+    65636: Assets/Sprites/SOTW logo-50.png
+    65661: Assets/Sprites/SOTW logo-63.png
+    65686: Assets/Sprites/SOTW logo-75.png
+    65736: Assets/Sprites/SOTW logo-100.png
+    65936: Assets/Sprites/SOTW logo-200.png
+    131172: Assets/Sprites/SOTW logo-620 300.png
+    131272: Assets/Sprites/SOTW logo-1240 600.png
+    2031640: Assets/Sprites/SOTW logo-24.png
+    2031716: Assets/Sprites/SOTW logo-44.png
+    2031816: Assets/Sprites/SOTW logo-88.png
+    2097252: Assets/Sprites/SOTW logo-71.png
+    2097352: Assets/Sprites/SOTW logo-142.png
+    2162788: Assets/Sprites/SOTW logo-150.png
+    2162888: Assets/Sprites/SOTW logo-300.png
+    2293860: Assets/Sprites/SOTW logo-310 150.png
+    2293960: Assets/Sprites/SOTW logo-620 300-min.png
+  metroTileShortName: Soldier Of The Woods
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
