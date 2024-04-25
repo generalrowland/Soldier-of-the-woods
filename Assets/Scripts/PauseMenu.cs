@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    public GameObject toSelect;
     public GameObject pauseMenu;
     public bool isPaused;
 
@@ -32,6 +34,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        EventSystem.current.SetSelectedGameObject(toSelect);
         Cursor.lockState = CursorLockMode.Confined;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
