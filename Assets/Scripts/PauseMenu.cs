@@ -21,14 +21,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
       
-            if(isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            
         
     }
 
@@ -63,5 +56,13 @@ public class PauseMenu : MonoBehaviour
     public void OnPause(InputValue Value)
     {
         isPaused = !isPaused;
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
     }
 }
