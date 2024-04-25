@@ -55,14 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void OnPause(InputValue Value)
     {
-        isPaused = !isPaused;
-        if (isPaused)
-        {
-            ResumeGame();
-        }
-        else
-        {
-            PauseGame();
-        }
+        isPaused = true;
+        PauseGame();
     }
 }
