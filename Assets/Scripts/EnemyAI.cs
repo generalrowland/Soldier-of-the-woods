@@ -40,7 +40,10 @@ public class EnemyAI : MonoBehaviour
                 Destroy(gameObject, 30);
                 ScoreManager.Instance.AddPoints(13);
             }
-
+            if (enemyHealth <= 0)
+            {
+                ai.enabled = false;
+            }
         }
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -51,7 +54,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player")&& target != null)
+        if (other.CompareTag("Player")&& target != null && ai.isActiveAndEnabled)
         {
             ai.SetDestination(target.transform.position);
             if(isMoving==false) 
