@@ -43,6 +43,12 @@ public class EnemyAI : MonoBehaviour
             if (enemyHealth <= 0)
             {
                 ai.enabled = false;
+                this.enabled = false;
+                damage = 0;
+                foreach(Collider col in gameObject.GetComponents<Collider>())
+                {
+                    col.enabled = false;
+                }
             }
         }
         if (collision.gameObject.CompareTag("Player"))
