@@ -15,11 +15,13 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
     private Animator animator;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -27,13 +29,26 @@ public class PlayerMovement : MonoBehaviour
     {
 
         if (horizontal != 0 || vertical != 0)
-
+        {
             animator.SetBool("IsMoving", true);
+        }
+
+            
         else
-
+        {
             animator.SetBool("IsMoving", false);
+            rb.velocity = Vector3.zero;
+        }
 
-        transform.Translate(horizontal * speed * Time.deltaTime, 0, vertical * speed * Time.deltaTime); 
+        if (rb.velocity.x> 5)
+        {
+            rb.velocity = new Vector3(5,rb.velocity.y, rb.velocity.z);
+        }
+        if (rb.velocity.z > 5)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5);
+        }
+
 
         if (transform.position.x < -xRange)
         {
@@ -52,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.AddForce(horizontal * speed * Time.deltaTime, 0, vertical * speed * Time.deltaTime, ForceMode.Impulse); 
     }
 
     public void MoveInput(Vector2 newMoveDir)
