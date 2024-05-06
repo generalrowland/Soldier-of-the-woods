@@ -67,11 +67,14 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
+
+        //transform.Translate((horizontal * transform.right + vertical * transform.forward) * speed * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
-        rb.AddForce(horizontal * speed * Time.deltaTime, 0, vertical * speed * Time.deltaTime, ForceMode.Impulse); 
+        rb.AddForce((horizontal * transform.right) * speed * Time.deltaTime, ForceMode.Impulse); 
+        rb.AddForce((vertical * transform.forward ) * speed * Time.deltaTime, ForceMode.Impulse); 
     }
 
     public void MoveInput(Vector2 newMoveDir)
