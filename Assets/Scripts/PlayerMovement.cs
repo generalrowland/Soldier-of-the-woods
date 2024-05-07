@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.AddForce((horizontal * transform.right) * speed * Time.deltaTime, ForceMode.Impulse); 
-        rb.AddForce((vertical * transform.forward ) * speed * Time.deltaTime, ForceMode.Impulse); 
+        rb.AddForce((vertical * transform.forward) * speed * Time.deltaTime, ForceMode.Impulse); 
     }
 
     public void MoveInput(Vector2 newMoveDir)
